@@ -10,7 +10,7 @@ let size = 10;
 function setup() {
     //create canvas
     createCanvas(800,600);
-    /*
+    
     stroke(255, 255, 255)
     strokeWeight(10);
     
@@ -25,10 +25,10 @@ function setup() {
     circle(150, 150, 40);
     circle(300, 150, 40);
 
-    arc(200, 300, 200, 200, 0, PI + QUARTER_PI, CHORD); */
+    arc(200, 300, 200, 200, 0, PI + QUARTER_PI, CHORD);
 }
 
-function draw(); {
+function draw() {
 
     //increase size
     size = size + 1;
@@ -37,9 +37,11 @@ function draw(); {
     //change fill color to red
     fill(255, 99, 99);
     //draw a circle to the center at an increasing rate
-    circle(150, 150, size);
+    //circle(150, 150, size);
+
+    circle(150, 150, 50)
 
     if(size > 200) {
-        fill(255, 99, 255);
+        fill(255, 188, 209);
     }
 }
