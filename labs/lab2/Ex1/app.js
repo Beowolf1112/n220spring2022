@@ -1,4 +1,13 @@
-let snowmount = 10;
+function setup() {
+    let x = 50;
+
+    createCanvas(500, 500);
+    text("Hello work", x, 50);
+    
+}
+
+//repeating function in-class example
+/*let snowmount = 10;
 
 //snow shovel example
 function shovel(shovelType) {
@@ -31,4 +40,4 @@ if(!res) {
 }
 
 res = shovel("metal");
-console.log("It done?" + res);
+console.log("It done?" + res);*/
