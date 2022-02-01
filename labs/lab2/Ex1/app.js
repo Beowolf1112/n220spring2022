@@ -1,10 +1,30 @@
-function setup() {
-    let x = 50;
+//Jack Goodman
+//1/25/2022
+//n220
 
-    createCanvas(500, 500);
-    text("Hello work", x, 50);
-    
-}
+function setup() {
+    //let x = 50;
+    let number = 0;
+
+    //createCanvas(500, 500);
+    //text("Hello work", x, 50);
+
+   function counter(couterUp) {
+    if(counterUp == "increase") {
+        number += 1;
+    }
+
+    let res = counter("increase");
+    console.log("Increase_Number" + res)
+
+    if(res == true) {
+        res = counter("increase");
+        console.log("Increase_Number" + res)
+    }
+   }
+
+
+} 
 
 //repeating function in-class example
 /*let snowmount = 10;
