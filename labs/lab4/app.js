@@ -21,6 +21,8 @@ let objPet = {
     offsetX: 1,
     // use offsetX for lab4
 }
+console.log(objPet.x);
+console.log(objPet.y);
 
 //this is #3's attempt for code to store objPet and its elements
 window.localStorage.setItem("objPet", JSON.stringify(objPet));
@@ -61,22 +63,18 @@ function draw() {
         objPet.y -=1;
     }
 
-    //attempt at world boarder
+    //world boarder
     if (objPet.x < 0) {
-        stop (objPet.x);
-        objPet.x -=2;
-    }
-    if (objPet.x > 600) {
-       stop(objPet.x);
         objPet.x +=2;
     }
+    if (objPet.x > 600) {
+        objPet.x -=2;
+    }
     if (objPet.y < 0) {
-        stop(objPet.y);
-        objPet.y -=2;
+        objPet.y +=2;
     }
     if (objPet.y > 400) {
-        stop(objPet.y);
-        objPet.y +=2;
+        objPet.y -=2;
     }
 
     let mousePressed = onclick;
