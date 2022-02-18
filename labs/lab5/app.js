@@ -1,27 +1,46 @@
 //Jack Goodman
 //2/17/2022
 //n220
-let peak = { 
-    x: 10, y: 10,
+
+//peak pixels
+let peak = { //object that holds variables
+    x: 100, y: 100,
     width: 10, height: 10,
 
-    screenWidth: 100, screenHeight: 100,
     screenColor: "#326500"
 }
 
-function setup() {
-    createCanvas(100, 100);
+let dvGas = document.getElementById("gas");
+let size = 100
+
+dvGas.style.width = size + "px" //set width to increase 10%
+dvGas.style.height = size + "px" //set height
+
+function rise() {
+    dvGas.style.width = size * 1.1 //set width to increase 10%
+    dvGas.style.height = size *1.1 //set height to increase 10%
 }
 
-function draw() {
-    drawtv(peak);
-    console.log(peak);
+function setup() { //create the overall screen
+    createCanvas(400, 400);
+    background(peak.screenColor);
 }
 
-function drawtv() {
+
+/*function drawtv(peak) { //create div that increases size when mouse pressed
     fill(0);
     rect(peak.x, peak.y, peak.width, peak.height);
-}
+    if (mouseIsPressed == true) {
+        var width = true;
+        var height = true;
+    } if (mouseIsPressed == false){
+        var width = false;
+        var height = false;
+    }
+}*/ //removed from assignment
+
+
+
 
 //in-class 2/17/22
 /*let thisarr = [];
