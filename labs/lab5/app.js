@@ -2,32 +2,67 @@
 //2/17/2022
 //n220
 
-//peak pixels
-let peak = { //object that holds variables
-    x: 100, y: 100,
-    width: 10, height: 10,
 
-    screenColor: "#326500"
-}
+let dvGas = document.getElementById("gas"); //element for Peak Pixels
+let size = 100;
+console.log(dvGas);
 
-let dvGas = document.getElementById("gas");
-let size = 100
+/*let newEl = document.createElement("div"); //Element for McDivn's
+newEl.innerHTML = "mc";
+newEl.style.backgroundColor = "#990000";
+newEl.style.width = size;
+document.body.appenendChild(newEl);*/ //places element onto page
+
 
 dvGas.style.width = size + "px" //set width to increase 10%
 dvGas.style.height = size + "px" //set height
+dvGas.style.backgroundColor = "#326500";
 
 function rise() {
-    dvGas.style.width = size * 1.1 //set width to increase 10%
-    dvGas.style.height = size *1.1 //set height to increase 10%
+    let ground = 0;
+    let name = 0;
+    dvGas.style.width = size * 1.1; //set width to increase 10%
+    dvGas.style.height = size * 1.1; //set height to increase 10%
+    console.log(rise);
+    dvGas.innerHTML = "div";
+    if (ground > 3) {
+        dvGass.innerHTML = "divdivdiv";
+    }
 }
 
-function setup() { //create the overall screen
+function over() { //Over & Out
+    let mouseX = MouseEvent //trigger change for mouse position
+    let side = "mouseout";
+   
+     if(mouseX < 100) side = "mouseover";
+    dvGas.innerHTML = side;
+    if(side = "mouseover") { //change color when mouse over
+        dvGas.style.backgroundColor = "#000000";
+    }
+} function out() {
+    let mouseX = MouseEvent //trigger change for mouse position
+    let side = "mouseover";
+    if(mouseX > 100) side = "mouseout"; //change color when mouse out
+    dvGas.innerHTML = side;
+    if(side = "mouseout") {
+        dvGas.style.backgroundColor = "#0000ff";
+    }
+}
+    
+
+
+//--------------------Code Graveyard--------------------------------------------
+//removed from assignment
+/*let peak = { //object that holds variables
+    x: 100, y: 100,
+    width: 10, height: 10,
+    screenColor: "#326500"
+}
+function setup(){
     createCanvas(400, 400);
     background(peak.screenColor);
 }
-
-
-/*function drawtv(peak) { //create div that increases size when mouse pressed
+function draw() { //create div that increases size when mouse pressed
     fill(0);
     rect(peak.x, peak.y, peak.width, peak.height);
     if (mouseIsPressed == true) {
@@ -38,9 +73,7 @@ function setup() { //create the overall screen
         var height = false;
     }
 }*/ //removed from assignment
-
-
-
+//------------------------------------------------------------------------------
 
 //in-class 2/17/22
 /*let thisarr = [];
