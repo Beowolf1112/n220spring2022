@@ -51,7 +51,7 @@ function over() { //Over & Out
 function push() { //personal composition
     let nya = 0;
     console.log(push);
-    dvGas.innerHTML = "div";
+    dvGas.innerHTML = "gas";
     if (console.count(rise) > 5) console.count(rise) + 1;
 }
     
