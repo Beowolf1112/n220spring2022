@@ -7,11 +7,12 @@ let dvGas = document.getElementById("gas"); //element for Peak Pixels
 let size = 100;
 console.log(dvGas);
 
-/*let newEl = document.createElement("div"); //Element for McDivn's
+let newEl = document.createElement("div"); //Element for McDivn's
 newEl.innerHTML = "mc";
 newEl.style.backgroundColor = "#990000";
 newEl.style.width = size;
-document.body.appenendChild(newEl);*/ //places element onto page
+document.body.appendChild(newEl); //places element onto page
+newEl.style,float = "left";
 
 
 dvGas.style.width = size + "px" //set width to increase 10%
@@ -23,11 +24,9 @@ function rise() {
     let name = 0;
     dvGas.style.width = size * 1.1; //set width to increase 10%
     dvGas.style.height = size * 1.1; //set height to increase 10%
+    
     console.log(rise);
     dvGas.innerHTML = "div";
-    if (ground > 3) {
-        dvGass.innerHTML = "divdivdiv";
-    }
 }
 
 function over() { //Over & Out
@@ -47,6 +46,13 @@ function over() { //Over & Out
     if(side = "mouseout") {
         dvGas.style.backgroundColor = "#0000ff";
     }
+}
+
+function push() { //personal composition
+    let nya = 0;
+    console.log(push);
+    dvGas.innerHTML = "div";
+    if (console.count(rise) > 5) console.count(rise) + 1;
 }
     
 
