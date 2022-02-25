@@ -42,7 +42,7 @@ function threeFive(beep) {
 //Runner Up
 let runTimes = document.getElementById("runTimes");
 //let runTimes1 = document.getElementById("runTimes1");
-let times = ["1:25.06", "1:10.17", "0:59.36"];
+let times = ["1", "2", "3"];
 let res2 = timerUp(times);
 runTimesStat = times[0]; runTimes.innerHTML = runTimesStat;
 runTimesStat1 = times[1]; runTimes1.innerHTML = runTimesStat1;
