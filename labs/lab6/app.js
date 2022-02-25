@@ -59,12 +59,38 @@ function timerUp(times) {
 
 //Favorray
 let favor = document.getElementById("favor");
-let favorite = ["Sleep", "Relax", "Draw", "Soda", "Games"];
+let favorite = ["Sleep", "Relaxing", "Drawing", "Soda", "Game"];
 let res3 = favoriteUp(favorite);
-console.log(res3 + " is one of my favorite things");
-favorStat = favorite[0]; favor.innerHTML = favorStat;
+//console.log(res3 + " is one of my favorite things");
+favorStat = favorite[0] + " is one of my favorite things"; favor.innerHTML = favorStat;
 
-/*function favoriteUp(favorite) {
+function favoriteUp (favorite) {
+    let favor = 0;
+    for(var i=0; favor < favorite.length; i++) {
+        if(favor = favorite[0]) {
+            console.log(favorite[0] + " is one of my favorite things");
+            favor = favor +1;
+        }
+        if(favor = favorite[1]) {
+            console.log(favorite[1] + " is one of my favorite things");
+            favor = favor +2;
+        }
+        if(favor = favorite[2]) {
+            console.log(favorite[2] + " is one of my favorite things");
+            favor = favor +3;
+        }
+        if(favor = favorite[3]) {
+            console.log(favorite[3] + " is one of my favorite things");
+            favor = favor +4;
+        }
+        if(favor = favorite[4]) {
+            console.log(favorite[4] + " is one of my favorite things");
+            favor = favor +5;
+        }
+    }
+}
+
+/*function favoriteUp(favorite) { <---//crashes live server
     let favor = favorite[i];
     for(var i = 0; favor = favorite[0]; i++) {
         console.log(favorite[0]);
