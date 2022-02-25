@@ -2,6 +2,58 @@
 //2/22/2022
 //n220
 
+//Loop, but big
+let bigLoop = document.getElementById("bigLoop");
+let big = [1000, 2000, 3000, 4000, 5000];
+let statBig = big[0]; bigLoop.innerHTML = statBig; //connects to div
+
+let res = bigLop(big); //make variables in big appear on console
+function bigLop(bigCount) {
+    for(var i = 0; i < bigCount.length; i++) {
+        console.log(bigCount[i]);
+    }
+}
+
+//Beep Bop
+let beepBop = document.getElementById("beepBop");
+          //0, 1,  2, 3,  4,  5,  6,  7
+let beep = [6, 9, 10, 12, 15, 20, 21, 25];
+let res1 = threeFive(beep); //puts beep on console
+beepBopStat = beep[7]; //calls beep
+beepBop.innerHTML = beepBopStat; //puts beepBopStat on page
+
+function threeFive(beep) {
+    let beepBop = beep[i]; //call random beep elements
+    for(var i = 0; i < beep.length; i++) {
+        if(beepBop = beep[0, 1, 3, 6]) { // divisible by 3
+            console.log("beep");
+        } else(beepBop = [2, 5, 7]) //divisible by 5
+            console.log("bop");
+        if(beepBop = beep[4]) { //divisible by 3 and 5 
+            console.log("beepbop")
+        }
+    } 
+}
+
+//Runner Up
+let runTimes = document.getElementById("runTimes");
+let times = ["1:25.06", "1:10.17", "0:59.36"];
+let res2 = timerUp(times);
+runTimesStat = times[0, 1];
+runTimes.innerHTML = runTimesStat;
+
+function timerUp(times) {
+    let runtimes = times[i];
+    for(var i=0; i < times.length; i++) {
+        if(runTimes = times[0]) {
+            console.log(times[0]);
+        } else(runTimes = times[1])
+        console.log(times[1]);
+    }
+}
+
+
+//-------------------------------------------------------------------------------------
 //in-class 2/22/22
 //Review - No New Code
 
