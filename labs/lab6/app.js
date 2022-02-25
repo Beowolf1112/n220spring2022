@@ -6,6 +6,10 @@
 let bigLoop = document.getElementById("bigLoop");
 let big = [1000, 2000, 3000, 4000, 5000];
 let statBig = big[0]; bigLoop.innerHTML = statBig; //connects to div
+let statBig1 = big[1]; bigLoop1.innerHTML = statBig1;
+let statBig2 = big[2]; bigLoop2.innerHTML = statBig2;
+let statBig3 = big[3]; bigLoop3.innerHTML = statBig3;
+let statBig4 = big[4]; bigLoop4.innerHTML = statBig4;
 
 let res = bigLop(big); //make variables in big appear on console
 function bigLop(bigCount) {
@@ -39,8 +43,8 @@ function threeFive(beep) {
 let runTimes = document.getElementById("runTimes");
 let times = ["1:25.06", "1:10.17", "0:59.36"];
 let res2 = timerUp(times);
-runTimesStat = times[0, 1];
-runTimes.innerHTML = runTimesStat;
+runTimesStat = times[0]; runTimes.innerHTML = runTimesStat;
+runTimesStat1 = times[1]; runTimes1.innerHTML = runTimesStat1;
 
 function timerUp(times) {
     let runtimes = times[i];
@@ -69,7 +73,7 @@ function countTwenties(numbersArray) {
     for(var i = 0; i < testArray.length; i++) {
         if(numbersArray[i] > 20) {
             console.log(numbersArray[i] + ": its greater than 20");
-            count = count = 1;
+            count = count + 1;
         }
     } 
     //(if count is less than three): The count of those numbers
