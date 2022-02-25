@@ -41,6 +41,7 @@ function threeFive(beep) {
 
 //Runner Up
 let runTimes = document.getElementById("runTimes");
+//let runTimes1 = document.getElementById("runTimes1");
 let times = ["1:25.06", "1:10.17", "0:59.36"];
 let res2 = timerUp(times);
 runTimesStat = times[0]; runTimes.innerHTML = runTimesStat;
@@ -55,6 +56,20 @@ function timerUp(times) {
         console.log(times[1]);
     }
 }
+
+//Favorray
+let favor = document.getElementById("favor");
+let favorite = ["Sleep", "Relax", "Draw", "Soda", "Games"];
+let res3 = favoriteUp(favorite);
+console.log(res3 + " is one of my favorite things");
+favorStat = favorite[0]; favor.innerHTML = favorStat;
+
+/*function favoriteUp(favorite) {
+    let favor = favorite[i];
+    for(var i = 0; favor = favorite[0]; i++) {
+        console.log(favorite[0]);
+    }
+}*/
 
 
 //-------------------------------------------------------------------------------------
