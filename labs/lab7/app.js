@@ -6,3 +6,14 @@
 
 
 //Rock, Paper, Scissors (Guard) 
+let playerScore = 0;
+let computerScore = 0;
+
+let comRock = document.getElementById("comRock");
+let comPaper = document.getElementById("comPaper");
+let comScissors = document.getElementById("comScissors");
+let comGuard = document.getElementById("comGuard");
+
+function rock() {
+    
+}
