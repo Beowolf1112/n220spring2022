@@ -4,22 +4,21 @@
 
 //Ever Larger, until not
 let dia = {
-    x: 200,
-    y: 200,
+    x: 200, y: 200,
     color: "#990000",
     size: 1
 };
 
 function setup() {
-    createCanvas(400, 400);
-    background(62, 237, 108)
+    createCanvas(300, 300);
+    background(62, 237, 108);
 }
 
 function draw() {
-    dia.x = dia.x + 1;
-    if(dia.x > 200) dia = 0; {
-        //fill(dia.color); =/= acceptable
-        fill(0, 0, 0);
-        circle(12, 100, dia.size);
+    //fill(dia.color); =/= acceptable
+    circle(150, 150, dia.size);
+
+    dia.size = dia.size + 1;
+    if(dia.size > 200) dia.size = 1; {
     }
 }
