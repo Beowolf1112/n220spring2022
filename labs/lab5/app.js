@@ -121,8 +121,8 @@ let parks = ["Holiday", "Marott", "Central", "Cool Creek"];
 //console.log(parks[2]); //Central
 console.log(parks.length); //Number of things in parks; 4
 
-for(let eye = 0; eye < parks.length; eye++) {
-    alienDiv.innerHTML += parks[eye];
+for(let i = 0; i < parks.length; i++) {
+    alienDiv.innerHTML += parks[i];
 }
 
 parks.forEach(park => alienDiv.innerHTML += park);*/
