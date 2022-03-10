@@ -2,7 +2,32 @@
 //3/8/2022
 //n220
 
-let txtName = document.getElementById("txtName");
+
+
+
+
+
+//-----------In-lab 3/10/22---------------------------------------
+/*let vowel = document.getElementById(vowel);
+
+function alphabet() {
+    let word = vowel.value;
+    let newWord = "";
+
+    for(var i=0; i<word.length; i++) {
+        //check to see if vowel or not; || = seperates if-statments
+        //if(!(word[i]=="a" ||...)) --> does else-statment for you.
+        if(word[i]=="a" ||word[i]=="e" || word[i]=="i" ||word[i]=="o" ||word[i]=="u") {
+            console.log("it's a vowel");
+        } else {
+            newWord += word[i];
+        }
+    }
+}*/
+
+
+//-----------In-class 3/8/22--------------------------------------
+/*let txtName = document.getElementById("txtName");
 let txtTimes = document.getElementById("txtTimes");
 let dvStoryResult = document.getElementById("storyResult");
 let dvLoverName = document.getElementById("loverName");
@@ -29,10 +54,10 @@ function generateLover() {
    /* let val = "";
     for(let i=0; i<5; i++) {
         val += username + "";
-    }*/ //more complicated version of "let lovers"vvv
+    }'/ //more complicated version of "let lovers"vvv
     let lovers = `${userName}, ${userName}, ${userName} and  are your lovers.`;
     //let times = Number(txtTimes.value); //changes string into number-based inputs
     dvLoverName.innerHTML = lovers;
 
     txtName.value = "";
-}
+} */
