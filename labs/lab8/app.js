@@ -32,18 +32,19 @@ function payTax(){
 //Password Protected
 function password() {
     let passWord = txtWord.value;
-    
-    let word = ``;
+    let word = `monkey`;
+    txtWord.value = "";
   
 }
 
 function username(){
     let userName = txtName.value;
-    let namE = ``;
+    let name = `Mmmm`;
+    txtName = "";
 }
-if( (username == namE) && (password == word) ) {
-
-}
+if( (name == "Mmmm") && (word == "monkey") ) {
+    let display = `Success`;
+} else{let display = `wrong information`;}
 
 
 //-----------In-lab 3/10/22---------------------------------------
