@@ -29,6 +29,21 @@ function payTax(){
     txtName.value = "";
 }
 
+//Password Protected
+function password() {
+    let passWord = txtWord.value;
+    
+    let word = ``;
+  
+}
+
+function username(){
+    let userName = txtName.value;
+    let namE = ``;
+}
+if( (username == namE) && (password == word) ) {
+
+}
 
 
 //-----------In-lab 3/10/22---------------------------------------
