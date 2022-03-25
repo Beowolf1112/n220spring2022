@@ -2,8 +2,32 @@
 //3/8/2022
 //n220
 
+//Greeter
+let txtName = document.getElementById("txtName");
+let txtWord = document.getElementById("txtWord");
+let txtTimes = document.getElementById("txtTimes");
+let hello = document.getElementById("hello");
+let tax = document.getElementById("tax");
 
+function helloName(){
+    let userName = txtName.value;
+    let name = `Hello ${userName}`;
+    console.log(userName);
 
+    hello.innerHTML = name;
+    txtName.value = "";
+}
+
+//Tip Calculator
+function payTax(){
+    let userName = txtName.value;
+    let name = `Tip: ${userName}. Total: ${userName}`;
+    console.log(userName);
+
+    let times = Number(txtTimes.value);
+    tax.innerHTML = name;
+    txtName.value = "";
+}
 
 
 
@@ -61,3 +85,16 @@ function generateLover() {
 
     txtName.value = "";
 } */
+
+/*---------------------Placeholder for example html--------------------------------------
+    <input id="vowel"><br />
+    <button onclick="alphabet()">remove vowels</button>
+
+    <input id="txtName"><br />
+    <button onclick="generateSong()">Generate Song</button>
+
+    <div id="storyResult"></div>
+    <button onclick="generateStory()">Generate Story</button>
+    
+    <div id="loverName"></div>
+    <button onclick="generateLover()">Generate Lover</button>*/
