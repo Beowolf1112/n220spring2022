@@ -2,7 +2,25 @@
 //4/5/2022
 //n220
 
-let exampleDiv = document.getElementById("example");
+
+//---------In-Lab__4/7/22----------------------------------------------------------
+function ticTacTo(){
+    var grid = [
+        [0,1,0],
+        [0,0,2],
+        [0,0,0],
+    ];
+
+    for(var y=0; y < grid.length; y++){
+        for(var x=0; x < grid[0].length; x++){
+            
+            console.log(grid[y][x]);
+        }
+    }
+}
+
+//---------In-Class__4/5/22--------------------------------------------------------
+/*let exampleDiv = document.getElementById("example");
 exampleDiv.addEventListener("click", dothing);
 
 let exampleDiv2 = document.getElementById("example2");
@@ -16,11 +34,5 @@ function dothing() {
 
 function dothing2() {
     event.target.innerHTML = "DONE";
-}
-
-var grid = [
-    [0, 0, 0,],
-    [0, 0, 0],
-    [0, 0, 0]
-];
-
+}*/
+//----------------------------------------------------------------------------------
