@@ -6,11 +6,11 @@
 let hash = document.getElementById(hashbrown);
 
 function hashtag() {
-    let tag = hash.value;
+    let tag = hash.value; //.value is undefined... strange
     let newTag = "";
 
-    for(var i=0; i<tag.length; i++) {
-        if(tag[i]=="#") {
+    for(var i=0; i<tag.length; i++) { //length is also undefined??
+        if(tag[i]=="#") { //singles out #s to be picked clean
             console.log("cleaned up");
         } else {
             newTag += tag[i];
@@ -23,10 +23,10 @@ const div1 = document.createElement("div1");
 div1.style.width = "100px";
 div1.style.height = "100px";
 div1.style.background = "red";
-div1.style.color = "white";
-div1.innerHTML = "One__";
-document.body.appendChild(div1);
-div1.addEventListener("click", changeStyles);
+div1.style.color = "white"; //presence of font needed due to three squares looking like a single rectangle
+div1.innerHTML = "One__"; //has underscores to add space to text
+document.body.appendChild(div1); //creates an end for parent node
+div1.addEventListener("click", changeStyles); //allows div1 to be added to event inputs
 
 const div2 = document.createElement("div2");
 div2.style.width = "100px";
