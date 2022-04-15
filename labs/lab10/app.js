@@ -38,7 +38,42 @@ function sailor() {
     }
 }
 
-//
+//Its Just Average
+let average = document.getElementById("average");
+let sum = document.getElementById("sum");
+            //0, 1, 2
+let number = [1, 2, 3];
+let numb1 = baverage(number); //pastes console.logs repeatedly... fix if time
+let numb2 = tsum(number);//^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+function baverage(number) {
+    let baverage = number[i];
+    for(var i = 0; i < number.length; i++) {
+        if(baverage = number[0, 1]){
+            console.log("1.5");
+        } else(baverage = [0, 2])
+            console.log("2");
+        if(baverage = number[1, 2]) {
+            console.log("2.5")
+        } else(baverage = number[0, 1, 2])
+            console.log("2");
+    } 
+}
+
+function tsum(number) {
+    let tsum = number[i];
+    for(var i = 0; i < number.length; i++) {
+        if(tsum = number[0, 1]){
+            console.log("3");
+        } else(tsum = [0, 2])
+            console.log("4");
+        if(tsum = number[1, 2]) {
+            console.log("5")
+        } else(tsum = number[0, 1, 2])
+            console.log("6");
+    } 
+}
+
 
 //----------In-Class_4/12-------------------------------------------
 /*let allNamesClicked = "";
