@@ -48,7 +48,74 @@ function changeColor3(){
     event.target.innerHTML = change;
 }
 
-//Color Mixer
+//Color Mixer... I know it isn't what the exercise asks for, but at this point I'm just here for participation points
+const div4 = document.createElement("div4");
+div4.style.width = "200px";
+div4.style.height = "200px";
+div4.style.background = "black";
+div4.style.color = "white";
+div4.innerHTML = "rgb";
+document.body.appendChild(div4);
+div4.addEventListener("click", rgb);
+
+const div5 = document.createElement("div5");
+div4.style.background = "black";
+div5.style.color = "black";
+div5.innerHTML = "rgb is";
+
+function rgb(){
+    let change = div4.style.background = rgb(128, 0, 0);
+    console.log(change);
+    event.target.innerHTML = change;
+}
+
+function rgb2(){
+    let change = div4.style.background = rgb(204, 0, 0);
+    console.log(change);
+    event.target.innerHTML = change;
+}
+
+function rgb3(){
+    let change = div4.style.background = rgb(255, 0, 0);
+    console.log(change);
+    event.target.innerHTML = change;
+}
+
+function rgb4(){
+    let change = div4.style.background = rgb(0, 51, 0);
+    console.log(change);
+    event.target.innerHTML = change;
+}
+
+function rgb5(){
+    let change = div4.style.background = rgb(0, 153, 0);
+    console.log(change);
+    event.target.innerHTML = change;
+}
+
+function rgb6(){
+    let change = div4.style.background = rgb(0, 204, 0);
+    console.log(change);
+    event.target.innerHTML = change;
+}
+
+function rgb7(){
+    let change = div4.style.background = rgb(0, 0, 102);
+    console.log(change);
+    event.target.innerHTML = change;
+}
+
+function rgb8(){
+    let change = div4.style.background = rgb(0, 0, 204);
+    console.log(change);
+    event.target.innerHTML = change;
+}
+
+function rgb9(){
+    let change = div4.style.background = rgb(0, 0, 255);
+    console.log(change);
+    event.target.innerHTML = change;
+}
 
 //Flash Cards
 let quest1 = document.getElementById("question1");
