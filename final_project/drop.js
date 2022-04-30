@@ -1,4 +1,4 @@
-function drop(x, y) {
+function Drop(x, y) {
     this.x = x;
     this.y = y;
     this.r = 8;
@@ -10,7 +10,7 @@ function drop(x, y) {
         ellipse(this.x, this.y, this.r*2, this.r*2);
     }
 
-    this.removeHP = function( ){
+    this.removeHP = function(){
         this.toDelete = true;
     }
 

@@ -44,8 +44,8 @@ function draw() {
     }
 
     if (edge){
-        for (var i = 0; i < flowers.length; i++){
-            flowers[i].shiftDown();
+        for (var i = 0; i < baddie.length; i++){
+            baddie[i].shiftDown();
         }
     }
 
@@ -56,6 +56,17 @@ function draw() {
     }
 }
 
+function score(){
+    this.showScore = function(score) {
+        var textHeight = 18;
+        textSize(textHeight);
+        var scoreText = "Score: " + score;
+
+        fill(255);
+        text(scoreText, 10, 20);
+    }
+}
+
 function keyReleased(){
     if (key !=' ') {
         ship.setDir(0);
@@ -63,6 +74,10 @@ function keyReleased(){
 }
 
 function keyPressed() {
+    if (key === "R"){
+        reset();
+    }
+
     if (key === ' ') {
         var drop = new Drop(width/2, height/2);
         drop.push(drop);
