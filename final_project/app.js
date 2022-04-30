@@ -4,7 +4,7 @@
 
 var ship;
 var baddie = [];
-var drop;
+var drop = [];
 
 function setup() {
     createCanvas(600,400);
@@ -18,6 +18,7 @@ function setup() {
 function draw() {
     background(200);
     ship.show(); //spawns the player ship
+    ship.move();
 
     for (var i = 0; i < drop.length; i++) {
         drop.show();
@@ -27,18 +28,37 @@ function draw() {
                 baddie[j].grow();
                 drop[i].removeHP();
 
-                //console.log("Anyway, so I started blasting")
+                console.log("Anyway, so I started blasting")
             }
         }
     }
 
+    var edge = false;
+
     for (var i = 0; i < 5; i++) {
         baddie[i].show();
+        baddie[i].move();
+        if (baddie[i].x > width || baddie[i].x < 0){
+            edge = true;
+        }
     }
+
+    if (edge){
+        for (var i = 0; i < flowers.length; i++){
+            flowers[i].shiftDown();
+        }
+    }
+
     for (var i = 0; drop.length >= 0; i--) {
        if (drop[i].toDelete){
            drop.splice(i, 1);
        }
+    }
+}
+
+function keyReleased(){
+    if (key !=' ') {
+        ship.setDir(0);
     }
 }
 
@@ -49,8 +69,8 @@ function keyPressed() {
     }
 
     if (keyCode === RIGHT_ARROW) { //right arrow moves ship to the left
-        ship.move(1);
+        ship.setDir(1);
     } else if (keyCode === LEFT_ARROW){ //left arrow moves ship to the right
-        ship.move(-1); 
+        ship.setDir(-1); 
     }
 }

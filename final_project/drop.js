@@ -22,6 +22,6 @@ function drop(x, y) {
     }
 
     this.move = function() {
-        this.y = this.y - 5;
+        this.y = this.y - 5; //pixels per second
     }
 }
