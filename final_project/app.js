@@ -3,15 +3,22 @@
 //n220
 
 var ship;
+var baddie = [];
 
 function setup() {
     createCanvas(600,400);
     ship = new ship(); //calls a new instance of ship()
+    for (var i = 0; i < 5; i++) {
+        baddie[i] = new baddies(i*80+80, 60);
+    }
 }
 
 function draw() {
     background(200);
     ship.show(); //spawns the player ship
+    for (var i = 0; i < 5; i++) {
+        baddie[i].show();
+    }
 }
 
 function keyPressed() {
